@@ -23,11 +23,11 @@ class Game
   end
 
 #Generate new questions until game over
-    puts "🕹----New Game----🕹"
+    puts "🕹----New Round----🕹"
       end
 
 #Determine if answer is correct
-if @new_question.correct_answer?(answer.to_i) #convert number value to integer
+if @new_question.right_answer?(answer.to_i) #convert number value to integer
   puts "#{@current_player.name}: YES! You are correct."
 else
   puts "#{@current_player.name}: Seriously? No!"
